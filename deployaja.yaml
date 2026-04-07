@@ -1,8 +1,7 @@
-- name: DeployAja Plan
-        uses: deployaja/deployaja-cli@v0.0.10
-        with:
-          command: plan
-          api-token: ${{ secrets.DEPLOYAJA_TOKEN }}
-          config-file: deployaja.yaml
-          # Tambahin ini biar dia tau image-nya pas ngetes plan
-          additional-args: --set container.image=${{ env.GH_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+name: bebasaja
+image: ghcr.io/nawfalrakhmansah/bebasaja:latest
+port: 80
+replicas: 1
+resources:
+  cpu: "500m"
+  memory: "512Mi"
