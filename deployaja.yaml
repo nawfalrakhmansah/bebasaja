@@ -1,8 +1,7 @@
-name: bebasaja-app
-
-services:
-  app:
-    container:
-      image: ghcr.io/nawfalrakhmansah/bebasaja:latest
-    ports:
-      - "80:80"
+name: my-app-name        # Ganti jadi nama aplikasi lu
+image: ""                # Biarkan kosong, nanti diisi otomatis lewat GitHub Actions
+port: 3000               # Sesuaikan sama port aplikasi lu (misal 80, 3000, atau 8080)
+replicas: 1              # Mau jalan berapa instance?
+resources:
+  cpu: "500m"            # 0.5 Core
+  memory: "512Mi"        # 512MB RAM
