@@ -1,0 +1,8 @@
+name: bebasaja-app
+
+services:
+  app:
+    container:
+      image: ghcr.io/nawfalrakhmansah/bebasaja:latest
+    ports:
+      - "80:80"
