@@ -1,7 +1,7 @@
-name: my-app-name        # Ganti jadi nama aplikasi lu
-image: ""                # Biarkan kosong, nanti diisi otomatis lewat GitHub Actions
-port: 3000               # Sesuaikan sama port aplikasi lu (misal 80, 3000, atau 8080)
-replicas: 1              # Mau jalan berapa instance?
+name: bebasaja           # Nama aplikasi di dashboard DeployAja
+port: 3000               # Ganti ke 80 atau 8080 kalau aplikasi lu pake port itu
+replicas: 1
 resources:
-  cpu: "500m"            # 0.5 Core
-  memory: "512Mi"        # 512MB RAM
+  cpu: "500m"
+  memory: "512Mi"
+# Jangan isi field 'image' di sini, karena bakal diisi otomatis via GitHub Actions
