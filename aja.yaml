@@ -1,5 +1,5 @@
 name: bebasaja           # Nama aplikasi di dashboard DeployAja
-port: 3000               # Ganti ke 80 atau 8080 kalau aplikasi lu pake port itu
+port: 3006               # Ganti ke 80 atau 8080 kalau aplikasi lu pake port itu
 replicas: 1
 resources:
   cpu: "500m"
