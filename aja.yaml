@@ -1,6 +1,6 @@
 name: bebasaja
 image: ghcr.io/nawfalrakhmansah/bebasaja:latest
-port: 80
+port: 8080
 replicas: 3
 
 resources:
