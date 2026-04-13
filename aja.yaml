@@ -1,7 +1,7 @@
 name: bebasaja
 image: ghcr.io/nawfalrakhmansah/bebasaja:latest
 port: 3000
-replicas: 1
+replicas: 3
 
 resources:
   cpu: "500m"
