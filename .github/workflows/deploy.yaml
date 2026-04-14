@@ -41,7 +41,7 @@ jobs:
         with:
           command: plan
           api-token: ${{ secrets.DEPLOYAJA_TOKEN }}
-          config-file: bisaaja.yaml
+          config-file: bisaaja.yaml # INI HARUS DI GANTI JADI NAMA FILE KITA, JANGAN SAMPAI NGGA DI GANTI
           # DI PLAN JANGAN PAKE ADDITIONAL ARGS YANG ADA --SET
           
       - name: DeployAja Deploy
@@ -49,7 +49,7 @@ jobs:
         with:
           command: deploy
           api-token: ${{ secrets.DEPLOYAJA_TOKEN }}
-          config-file: bisaaja.yaml
+          config-file: bisaaja.yaml # INI HARUS DI GANTI JADI NAMA FILE KITA, JANGAN SAMPAI NGGA DI GANTI
           # DISINI BARU BOLEH PAKE --SET
           additional-args: --set container.image=${{ env.GH_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           
@@ -58,4 +58,4 @@ jobs:
         with:
           command: status
           api-token: ${{ secrets.DEPLOYAJA_TOKEN }}
-          config-file: bisaaja.yaml
+          config-file: bisaaja.yaml # INI HARUS DI GANTI JADI NAMA FILE KITA, JANGAN SAMPAI NGGA DI GANTI
